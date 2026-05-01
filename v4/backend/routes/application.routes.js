@@ -1,0 +1,10 @@
+const express = require('express');
+const router  = express.Router();
+const auth    = require('../middleware/auth.middleware');
+const { applyToJob, getWorkerApplications, getJobApplicants, hireWorker, rejectApplication } = require('../controllers/application.controller');
+router.post('/apply',              auth, applyToJob);
+router.get('/worker/:workerId',    auth, getWorkerApplications);
+router.get('/job/:jobId',          auth, getJobApplicants);
+router.put('/hire/:id',            auth, hireWorker);
+router.put('/reject/:id',          auth, rejectApplication);
+module.exports = router;
