@@ -1,4 +1,11 @@
 node_modules/
+v4/frontend/node_modules/
+v4/backend/node_modules/
 .env
 uploads/
 *.log
+
+.cache/
+dist/
+build/
+.cache/
