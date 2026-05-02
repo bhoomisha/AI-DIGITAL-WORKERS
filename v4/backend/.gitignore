@@ -1,11 +1,26 @@
+# Dependencies
 node_modules/
 v4/frontend/node_modules/
 v4/backend/node_modules/
+
+# Env files
 .env
-uploads/
+
+# Build outputs (React)
+v4/frontend/build/
+build/
+dist/
+
+# Cache
+.cache/
+v4/frontend/.cache/
+
+# Logs
 *.log
 
-.cache/
-dist/
-build/
-.cache/
+# Uploads (backend)
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
